@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdocs=self.webpackChunkdocs||[]).push([[2634],{5:(e,t,r)=>{r.r(t),r.d(t,{default:()=>n});r(6289),r(797),r(5359),r(9303);var s=r(4848);s.Fragment,s.Fragment,s.Fragment;var a=r(6347);function n(){return(0,s.jsx)(a.rd,{to:"/docs/get-started/index"})}}}]);
