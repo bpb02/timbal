@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkdocs=self.webpackChunkdocs||[]).push([[2634],{9179:(s,t,e)=>{e.r(t),e.d(t,{default:()=>r});var c=e(6347),d=e(4848);function r(){return(0,d.jsx)(c.rd,{to:"/timbal/docs/get-started"})}}}]);
