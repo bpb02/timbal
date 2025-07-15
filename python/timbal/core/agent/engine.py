@@ -20,7 +20,8 @@ from timbal.types.events.chunk import ChunkEvent
 from uuid_extensions import uuid7
 
 from ...errors import AgentError, EarlyExit
-from ...state.context import RunContext, run_context_var
+from ...state.context import RunContext
+from ...state import set_run_context
 from ...state.savers.base import BaseSaver
 from ...state.snapshot import Snapshot
 from ...steps.llms.router import llm_router
@@ -590,7 +591,7 @@ class Agent(BaseStep):
             context.id = uuid7(as_type="str")
 
         # Set the run context for the duration of the agent run.
-        run_context_var.set(context)
+        set_run_context(context)
 
         # Copy the input as is, so we save the traces without validated data and defaults.
         agent_input = dump(kwargs, context=context)
